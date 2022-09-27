@@ -1,0 +1,16 @@
+pipeline {
+    agent any
+    stages {
+        stage('test') {
+            steps {
+                sh 'echo udaykiran'
+            }
+        }
+        stage('learning') {
+            steps {
+                git url: 'https://github.com/udaykiran-dhatrika/spring-petclinic.git', 
+                    branch: 'main'
+            }
+        }
+    }
+}
