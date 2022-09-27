@@ -2,4 +2,8 @@ node {
     stage('test') {
         sh 'echo udaykiran'
     }
+    stage('learning') {
+        git url: 'https://github.com/udaykiran-dhatrika/spring-petclinic.git',
+            branch: 'main'
+    }
 }
